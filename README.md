@@ -1,4 +1,4 @@
-Cardápio Online de Restaurante
+## Cardápio Online de Restaurante
 Este é um projeto de uma aplicação web desenvolvida para um restaurante, permitindo aos clientes visualizar o cardápio online e entrar em contato diretamente pelo WhatsApp.
 
 Tecnologias Utilizadas
