@@ -18,11 +18,11 @@ videoCardapioONline
 Como Utilizar
 Clone o repositório:
 
-         git clone https://github.com/lipex5k/CardapioOnline.git
+         git clone https://github.com/KaioxDev/project-burguer.git
      
 Navegue até o diretório do projeto:
 
-         cd cardapio-online
+         cd project-burguer
      
 Abra o arquivo index.html no seu navegador para visualizar o cardápio.
 
