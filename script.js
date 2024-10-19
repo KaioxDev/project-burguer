@@ -154,7 +154,7 @@ checkoutBtn.addEventListener("click", function () {
 
   const cartItems = cart
     .map((item) => {
-      return `${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price} |`;
+      return `${item.name} Qtd: (${item.quantity}) Preço: R$${item.price} | `;
     })
     .join("");
 
@@ -173,7 +173,8 @@ checkoutBtn.addEventListener("click", function () {
 function checkRestaurantOpen() {
   const data = new Date();
   const hora = data.getHours();
-  return hora >= 0 && hora < 23;
+  return hora >= 7 && hora < 11;
+  // return hora >= 15 && hora < 18;
 }
 
 const spanItem = document.getElementById("date-span");
