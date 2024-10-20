@@ -1,173 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,800&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,800&display=swap"
+    rel="stylesheet" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Tapiocaria Do Vale.!" />
-    <meta property="og:image" content="https://i.pinimg.com/564x/93/04/f9/9304f954a02edad4b57619219c09d2bd.jpg" />
-    <meta property="og:description" content="O melhor Tapioca de verdade!" />
-    <meta property="og:site_name" content="DevTapiocaria" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./styles/output.css" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tapiocaria Do Vale.!" />
+  <meta property="og:image" content="https://i.pinimg.com/564x/93/04/f9/9304f954a02edad4b57619219c09d2bd.jpg" />
+  <meta property="og:description" content="O melhor Tapioca de verdade!" />
+  <meta property="og:site_name" content="DevTapiocaria" />
 
-    <title>Tapiocaria do Vale - A Melhor Por Whatsapp do Valentina !</title>
-  </head>
-  <body>
-    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
-      <div class="w-full h-full flex flex-col justify-center items-center">
-        <img
-          src="https://i.pinimg.com/564x/93/04/f9/9304f954a02edad4b57619219c09d2bd.jpg"
-          alt="Logo Tapiocaria"
-          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
-        />
-        <h1 class="text-3x1 mt-4 mb-2 font-bold text-white">Tapiocaria do Vale</h1>
+  <link rel="stylesheet" href="./styles/output.css" />
 
-        <span class="text-white font-medium">Av. Cuiabá Nª 71, Valentina - João Pessoa.</span>
+  <title>Tapiocaria do Vale - A Melhor Por Whatsapp do Valentina !</title>
+</head>
 
-        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-          <span class="text-white font-medium">Seg á Sab - 7:00 as 11:00</span>
-          <span class="text-white font-medium">/ 15:00 as 18:00</span> 
+<body>
+  <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+      <img src="https://i.pinimg.com/564x/93/04/f9/9304f954a02edad4b57619219c09d2bd.jpg" alt="Logo Tapiocaria"
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
+      <h1 class="text-3x1 mt-4 mb-2 font-bold text-white">Tapiocaria do Vale</h1>
+
+      <span class="text-white font-medium">Av. Cuiabá Nª 71, Valentina - João Pessoa.</span>
+
+      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+        <span class="text-white font-medium">Seg á Sab - 7:00 as 11:00</span>
+        <span class="text-white font-medium">/ 15:00 as 18:00</span>
+      </div>
+    </div>
+  </header>
+
+  <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+    Conheça nosso menu
+  </h2>
+
+  <div id="menu">
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+      <div class="flex gap-2">
+        <img src="https://www.saborbrasil.it/wp-content/uploads/2021/06/Beiju-de-tapioca.jpg" alt="TP coco"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Tapioca C/ Coco</p>
+          <p class="text-sm">
+            O coco ralado adiciona sabor e pode oferecer benefícios como antioxidantes.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 2.50</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="(T) Coco" data-price="2.50">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
         </div>
       </div>
-    </header>
 
-    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
-      Conheça nosso menu
-    </h2>
+      <div class="flex gap-2">
+        <img
+          src="https://conteudo.imguol.com.br/c/entretenimento/9b/2022/05/06/tapioca-com-ovo-1651876646575_v2_900x506.jpg"
+          alt="TP queijo" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" />
 
-    <div id="menu">
-      <main
-        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
-      >
-        <div class="flex gap-2">
-          <img
-            src="https://www.saborbrasil.it/wp-content/uploads/2021/06/Beiju-de-tapioca.jpg"
-            alt="TP coco"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
-          />
+        <div>
+          <p class="font-bold">Tapioca C/ Queijo</p>
+          <p class="text-sm">
+            A tapioca de queijo é uma opção versátil que pode ser personalizada de acordo com o gosto de cada um.
+          </p>
 
-          <div>
-            <p class="font-bold">Tapioca C/ Coco</p>
-            <p class="text-sm">
-              Goma e Coco.
-            </p>
-
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 2.50</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="(T) Coco"
-                data-price="2.50"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
-            </div>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 4.50</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="(T) queijo" data-price="4.50">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
           </div>
         </div>
+      </div>
 
-        <div class="flex gap-2">
-          <img
-            src="https://conteudo.imguol.com.br/c/entretenimento/9b/2022/05/06/tapioca-com-ovo-1651876646575_v2_900x506.jpg"
-            alt="TP queijo"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
-          />
+      <div class="flex gap-2">
+        <img src="https://vivariomarrecife.com.br/wp-content/uploads/2020/12/tapioca-riomar.jpg" alt="TP coco e queijo"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" />
 
-          <div>
-            <p class="font-bold">Tapioca C/ Queijo</p>
-            <p class="text-sm">
-              Goma e Queijo.
-            </p>
+        <div>
+          <p class="font-bold">Tapioca C/ Coco e Queijo</p>
+          <p class="text-sm">
+            Cada cultura tem suas próprias maneiras de combinar ingredientes, e a fusão de coco e queijo pode resultar
+            em sabores surpreendentemente deliciosos.
+          </p>
 
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 4.50</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="(T) queijo"
-                data-price="4.50"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
-            </div>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 5.00</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="(T) coco | queijo" data-price="5.00">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
           </div>
         </div>
+      </div>
 
-        <div class="flex gap-2">
-          <img
-            src="https://vivariomarrecife.com.br/wp-content/uploads/2020/12/tapioca-riomar.jpg"
-            alt="TP coco e queijo"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
-          />
+      <div class="flex gap-2">
+        <img
+          src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1140/https://www.bcnoticias.com.br/wp-content/uploads/2024/07/Depositphotos_207938522_XL-1140x570.jpg"
+          alt="TP presunto e queijo" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" />
 
-          <div>
-            <p class="font-bold">Tapioca C/ Coco e Queijo</p>
-            <p class="text-sm">
-              Goma, Coco e Queijo.
-            </p>
+        <div>
+          <p class="font-bold">Tapioca C/ Presunto e Queijo</p>
+          <p class="text-sm">
+            A tapioca de presunto e queijo é uma opção clássica e deliciosa para um lanche rápido ou um café da manhã
+            reforçado.
+          </p>
 
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 5.00</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="(T) coco | queijo"
-                data-price="5.00"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
-            </div>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 6.00</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="(T) presunto | queijo"
+              data-price="6.00">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
           </div>
         </div>
+      </div>
+    </main>
 
-        <div class="flex gap-2">
-          <img
-            src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1140/https://www.bcnoticias.com.br/wp-content/uploads/2024/07/Depositphotos_207938522_XL-1140x570.jpg"
-            alt="TP presunto e queijo"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
-          />
-
-          <div>
-            <p class="font-bold">Tapioca C/ Presunto e Queijo</p>
-            <p class="text-sm">
-              Goma, Presunto e Queijo.
-            </p>
-
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 6.00</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="(T) presunto | queijo"
-                data-price="6.00"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <!-- <div class="mx-auto max-w-7xl px-2 my-2">
+    <!-- <div class="mx-auto max-w-7xl px-2 my-2">
         <h2 class="font-bold text-3xl">Bebidas</h2>
       </div>
 
@@ -223,10 +187,7 @@
       </div>
     </div> -->
 
-    <div
-      class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
-      id="cart-modal"
-    >
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
       <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
         <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
 
@@ -235,45 +196,31 @@
         <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
 
         <p class="font-bold mt-4">Endereço de entrga:</p>
-        <input
-          type="text"
-          placeholder="Digite seu endereço completo..."
-          id="address"
-          class="w-full border-2 p-1 rounded my-1"
-        />
+        <input type="text" placeholder="Digite seu endereço completo..." id="address"
+          class="w-full border-2 p-1 rounded my-1" />
         <p class="text-red-500 hidden" id="address-warn">
           Digite seu endereço completo!
         </p>
 
         <div class="flex items-center justify-between mt-5 w-full">
           <button id="close-modal-btn">Fechar</button>
-          <button
-            id="checkout-btn"
-            class="bg-green-500 text-white px-4 py-1 rounded"
-          >
+          <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">
             Finazilar pedido
           </button>
         </div>
       </div>
     </div>
 
-    <footer
-      class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center"
-    >
-      <button
-        class="flex items-center gap-2 text-white font-bold"
-        id="cart-btn"
-      >
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+      <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
         (<span id="cart-count">0</span>) Veja meu carrinho
         <i class="fa fa-cart-plus text-lg text-white"></i>
       </button>
     </footer>
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/toastify-js"
-    ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
