@@ -174,7 +174,7 @@ function checkRestaurantOpen() {
   const data = new Date();
   const hora = data.getHours();
   // return hora >= 7 && hora < 11;
-  return hora >= 15 && hora < 18;
+  return hora >= 13 && hora < 18;
 }
 
 const spanItem = document.getElementById("date-span");
